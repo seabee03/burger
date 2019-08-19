@@ -1,0 +1,75 @@
+.card, .card-header {
+    background-color: transparent;
+}
+
+.card {
+    background-color: #fef1ee;
+    border-radius: 10px!important;
+}
+
+.card-header {
+    display: flex;
+    padding: 32 30px;
+}
+
+.card-header:hover {
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 0 30px 30px;
+}
+
+.modal-title {
+    margin: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e83b29;
+}
+
+.modal-header {
+    padding: 10px 0 20px;
+}
+
+.modal-header .close {
+    position: absolute;
+    right: 0;
+    padding: 0!important;
+    margin: -18px 15px;
+    font-size: 15px;
+}
+
+.modal-body {
+    padding: 10px;
+}
+
+.burger-form label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+.burger-form input[type=text], .burger-form input[type=number], .burger-form textarea {
+    margin-bottom: 18px;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 16px;
+    width: 100%;
+    background-color: #f5f5f5;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.burger-form textarea {
+    height: 165px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-section {
+        padding-right: 15px;
+    }
+    .accordion {
+        margin-top: 25px;
+    }
+}
