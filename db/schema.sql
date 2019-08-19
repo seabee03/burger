@@ -1,10 +1,19 @@
-CREATE DATABASE burger_db;
+DROP DATABASE IF EXISTS burger_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
-USE BURGER_DB;
+CREATE TABLE burger_menu (
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    burger_name VARCHAR(50) NOT NULL,
+    burger_description TEXT NULL,
+    burger_price DECIMAL (10, 2) NULL,
+    PRIMARY KEY (id)
+);
 
 CREATE TABLE burgers (
-    id int NOT NULL AUTO_INCREMENT,
-    name varchar(255) NOT NULL,
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    burger_name VARCHAR(50) NOT NULL,
+    burger_price DECIMAL(10, 2) NULL,
     devoured BOOLEAN DEFAULT false,
-    PRIMARY KEY (id)
+    PRIMARY KEY(id)
 );
